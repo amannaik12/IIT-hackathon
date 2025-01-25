@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Placement Platform</div>
+        <ul>
+            <li><a href="#admin">Admin</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#recruiters">Recruiters</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admin Section -->
+    <section id="admin">
+        <h1>Admin Section</h1>
+        <form id="college-setup">
+            <h2>College Setup</h2>
+            <label for="college-logo">Upload Logo:</label>
+            <input type="file" id="college-logo">
+            <label for="branding-color">Branding Color:</label>
+            <input type="color" id="branding-color">
+            <label for="placement-policy">Placement Policy:</label>
+            <textarea id="placement-policy" rows="4"></textarea>
+            <button type="submit">Save</button>
+        </form>
+        <div id="admin-dashboard">
+            <h2>Dashboard</h2>
+            <p>Manage recruiters, students, and track placements here.</p>
+        </div>
+    </section>
+
+    <!-- Student Section -->
+    <section id="students">
+        <h1>Student Section</h1>
+        <div id="profile-management">
+            <h2>Profile Management</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume">
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+        <div id="job-applications">
+            <h2>Job Applications</h2>
+            <ul>
+                <li>Job 1 - <button>Apply</button></li>
+                <li>Job 2 - <button>Apply</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Recruiter Section -->
+    <section id="recruiters">
+        <h1>Recruiter Section</h1>
+        <div id="job-posting">
+            <h2>Post a Job</h2>
+            <form>
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title">
+                <label for="job-description">Description:</label>
+                <textarea id="job-description" rows="4"></textarea>
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+        <div id="applicant-management">
+            <h2>Applicants</h2>
+            <ul>
+                <li>Student 1 - <button>Shortlist</button> <button>Reject</button></li>
+                <li>Student 2 - <button>Shortlist</button> <button>Reject</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Placement Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
